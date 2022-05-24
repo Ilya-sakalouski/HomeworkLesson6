@@ -3,6 +3,8 @@ package src.computer;
 public class Computer {
     int price;
     String model;
+    RAM ram;
+    HDD hdd;
 
     public Computer(int price, String model) {
         this.price = price;
@@ -12,6 +14,8 @@ public class Computer {
     public Computer(int price, String model, RAM ram, HDD hdd ) {
         this.price = price;
         this.model = model;
+        this.ram = ram;
+        this.hdd = hdd;
 
     }
 
