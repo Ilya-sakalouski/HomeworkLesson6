@@ -9,14 +9,16 @@ public class Computer {
         this.model = model;
     }
 
-    public Computer(int price, String model, RAM ram1, HDD hdd1 ) {
+    public Computer(int price, String model, RAM ram, HDD hdd ) {
         this.price = price;
         this.model = model;
 
     }
 
-    public void currentComputerInfo() {
-        System.out.print("Price= " + price + ", model: " + model);
+    public void currentComputerInfo(RAM ram, HDD hdd) {
+        System.out.print("Price= " + price + ", model: " + model );
+        ram.ramCurrentValue();
+        hdd.hddCurrentValue();
 
     }
 }

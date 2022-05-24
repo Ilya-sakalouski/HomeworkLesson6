@@ -29,14 +29,10 @@ public class Homework6Runner {
         HDD hdd1 = new HDD("Hdd1", 1000, true);
         HDD hdd2 = new HDD("Hdd2", 1500, false);
 
-        Computer computer1 = new Computer(1000, "Asus", ram1,hdd1);
-        Computer computer2 = new Computer(2000, "Dell");
-        computer1.currentComputerInfo();
-        ram1.ramCurrentValue();
-        hdd1.hddCurrentValue();
-        computer2.currentComputerInfo();
-        ram2.ramCurrentValue();
-        hdd2.hddCurrentValue();
+        Computer computer1 = new Computer(1000, "Asus", ram1, hdd1);
+        Computer computer2 = new Computer(2000, "Dell", ram2, hdd2);
+        computer1.currentComputerInfo(ram1,hdd1);
+        computer2.currentComputerInfo(ram2,hdd2);
 
     }
 }
